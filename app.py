@@ -4,7 +4,7 @@ def wsgi_app(environ, start_response):
     start_response(status, response_headers)
     
     execfile("main2.py")
-    response_body = maintest()
+    response_body = "fff" #maintest()
     
     
     #response_body = 'Hello World app'
