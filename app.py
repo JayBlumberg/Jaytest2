@@ -2,12 +2,8 @@ def wsgi_app(environ, start_response):
     status = '200 OK'
     response_headers = [('Content-type', 'text/plain')]
     start_response(status, response_headers)
-    
-    execfile("/main2.py")
-    response_body = "fff" #maintest()
-    
-    
-    #response_body = 'Hello World app'
+    x = 'Hello World app'
+            response_body = x
     yield response_body.encode()
 
 if __name__ == '__main__':
