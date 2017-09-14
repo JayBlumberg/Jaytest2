@@ -3,7 +3,7 @@ def wsgi_app(environ, start_response):
     response_headers = [('Content-type', 'text/plain')]
     start_response(status, response_headers)
     
-    execfile("main2.py")
+    #execfile("main2.py")
     response_body = "fff" #maintest()
     
     
