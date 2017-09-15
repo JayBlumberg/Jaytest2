@@ -4,7 +4,7 @@ def wsgi_app(environ, start_response):
     start_response(status, response_headers)
     response_body = 'Hello World app'
     yield response_body.encode()
-    print("hello-from jay")
+
 
 
 if __name__ == '__main__':
