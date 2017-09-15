@@ -1,10 +1,12 @@
+    import datetime
+    today = datetime.date.today()
+
 def wsgi_app(environ, start_response):
     status = '200 OK'
     response_headers = [('Content-type', 'text/plain')]
     start_response(status, response_headers)
     
-    import datetime
-    today = datetime.date.today()
+
     
     text = 'hello world app.py - ' + today
     response_body = text
