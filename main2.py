@@ -1,5 +1,4 @@
 def testmain():
-	print ("hi")
 	import sqlite3
 	dbname = 'music.sqlite3'
 	conn = sqlite3.connect(dbname)
