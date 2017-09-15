@@ -2,7 +2,10 @@ def wsgi_app(environ, start_response):
     status = '200 OK'
     response_headers = [('Content-type', 'text/plain')]
     start_response(status, response_headers)
-    text = 'kljlj'
+    
+    today = date.today()
+    
+    text = 'hello world app.py - ' + today
     response_body = text
     yield response_body.encode()
 
