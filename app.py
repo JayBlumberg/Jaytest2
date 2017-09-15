@@ -1,5 +1,4 @@
-    import datetime
-    today = datetime.date.today()
+
 
 def wsgi_app(environ, start_response):
     status = '200 OK'
@@ -8,7 +7,7 @@ def wsgi_app(environ, start_response):
     
 
     
-    text = 'hello world app.py - ' + today
+    text = 'hello world app.py - ' 
     response_body = text
     yield response_body.encode()
 
